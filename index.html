@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link type="text/css" rel="stylesheet" href="styles.css"/>
+  <script type="text/javascript" src="scripts.js"></script>
+</head>
+<body>
+  <label>
+    <input id="show_unpickable" type="checkbox" onclick="showUnpickable()">
+    Use names that cannot pick each other
+  </label>
+  <div id="unpickables_area"></div>
+
+  <p>Names:</p>
+  <input type="number" id="name_qty">
+  <button onclick="updateInputs('name')">Update</button>
+  <button onclick="addInput('name')">+</button>
+  <button onclick="removeInput('name')">-</button>
+  <br>
+  <div id="names_container">
+  </div>
+
+  <button id="randomize_btn" type="button" onclick="randomize()">
+    Randomize Names!
+  </button>
+
+  <div id="result">
+  </div>
+</body>
+</html>
